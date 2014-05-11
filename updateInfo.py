@@ -7,7 +7,7 @@ import time
 from douban_book_api import getbyisbn_without_auth
 from loggerinit import initialize_logger
 
-log = initialize_logger(os.getcwd(),'insertIntoQueue')
+log = initialize_logger(os.getcwd(),'fetchFromDouban')
 reload(sys)
 sys.setdefaultencoding("utf-8")
 path = sys.argv[1]
