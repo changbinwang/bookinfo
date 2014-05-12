@@ -32,6 +32,7 @@ def fetchFromDouban(ch, method, properties, body):
         try:
             log.info(info[1])
             data = getbyisbn_without_auth(info[1])
+            time.sleep(3)
             break
         except Exception, e:
             log.error("Connection error happened: "+str(e))

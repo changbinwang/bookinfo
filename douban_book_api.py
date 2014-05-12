@@ -9,7 +9,5 @@ __author__ = 'owen2785'
 
 baseurl = 'https://api.douban.com/v2/book/isbn/'
 def getbyisbn_without_auth(isbn):
-    r = requests.get(baseurl+str(isbn),headers=headers)
-    print r.headers
-    print r.request.headers
+    r = requests.get(baseurl+str(isbn))
     return r.json()
